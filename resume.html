@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shubham Kumar - Resume</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "surface-dim": "#c9dde8",
+                        "primary-fixed-dim": "#b4cad6",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#455a64",
+                        "surface-container-high": "#d7ebf6",
+                        "on-primary-fixed": "#071e27",
+                        "surface-container": "#dcf1fc",
+                        "inverse-on-surface": "#dff4ff",
+                        "on-tertiary-container": "#cccdcd",
+                        "secondary-fixed-dim": "#bac9d3",
+                        "on-primary-fixed-variant": "#354a53",
+                        "tertiary-container": "#555757",
+                        "on-primary-container": "#bad0dc",
+                        "on-secondary-container": "#56656e",
+                        "tertiary": "#3e4040",
+                        "background": "#f3faff",
+                        "on-secondary-fixed": "#0f1d25",
+                        "error": "#ba1a1a",
+                        "on-background": "#0a1e26",
+                        "primary-fixed": "#cfe6f2",
+                        "surface-variant": "#d1e6f0",
+                        "surface-tint": "#4c616c",
+                        "surface-container-low": "#e6f6ff",
+                        "outline": "#73787b",
+                        "on-surface": "#0a1e26",
+                        "error-container": "#ffdad6",
+                        "secondary": "#526069",
+                        "surface-container-highest": "#d1e6f0",
+                        "inverse-surface": "#20333b",
+                        "secondary-fixed": "#d6e5ef",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "on-surface-variant": "#42474a",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#b4cad6",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f3faff",
+                        "on-secondary-fixed-variant": "#3b4951",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c2c7ca",
+                        "primary": "#2e434c",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "secondary-container": "#d3e2ed",
+                        "surface": "#f3faff",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "main-width": "65%",
+                        "page-margin-y": "15mm",
+                        "section-stack": "24px",
+                        "element-stack": "8px",
+                        "column-gap": "8mm",
+                        "page-margin-x": "15mm",
+                        "sidebar-width": "35%"
+                    },
+                    "fontFamily": {
+                        "h1-name": ["Inter"],
+                        "label-metadata": ["Inter"],
+                        "body-main": ["Inter"],
+                        "h3-title": ["Inter"],
+                        "h2-section": ["Inter"],
+                        "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                        "h1-name": ["24pt", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-metadata": ["9pt", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "body-main": ["10pt", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "h3-title": ["11pt", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "h2-section": ["12pt", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "caption": ["8pt", { "lineHeight": "1.3", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* A4 Print Setup */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        body {
+            background-color: #f0f4f8; /* Softer background outside the A4 paper */
+            display: flex;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+        .a4-paper {
+            width: 210mm;
+            height: 297mm;
+            background-color: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ensure content doesn't bleed */
+        }
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .a4-paper {
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="text-on-surface antialiased">
+<!-- Top Navigation (No Print) -->
+<div class="fixed top-0 left-0 right-0 w-full px-8 py-4 bg-white border-b-[0.5pt] border-outline-variant flex justify-between items-center z-50 no-print shadow-sm">
+<div class="text-xl font-bold text-on-surface uppercase tracking-widest font-h3-title">
+            Resume Professional
+        </div>
+<div class="flex gap-4">
+<button class="flex items-center gap-2 px-4 py-2 text-on-surface hover:bg-surface-variant transition-colors rounded">
+<span class="material-symbols-outlined text-xl">download</span>
+<span class="font-label-metadata text-label-metadata hidden md:inline">Download</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 text-on-surface hover:bg-surface-variant transition-colors rounded">
+<span class="material-symbols-outlined text-xl">print</span>
+<span class="font-label-metadata text-label-metadata hidden md:inline">Print</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 text-on-surface hover:bg-surface-variant transition-colors rounded">
+<span class="material-symbols-outlined text-xl">share</span>
+<span class="font-label-metadata text-label-metadata hidden md:inline">Share</span>
+</button>
+</div>
+</div>
+<!-- The A4 Resume -->
+<div class="a4-paper flex mt-16 print:mt-0 relative">
+<!-- Sidebar (35%) -->
+<aside class="w-[35%] bg-surface-container-high h-full flex flex-col pt-page-margin-y pb-page-margin-y pl-page-margin-x pr-column-gap">
+<!-- Contact Section -->
+<div class="mb-section-stack mt-24">
+<h2 class="font-h2-section text-h2-section text-primary uppercase mb-element-stack flex items-center gap-2 border-b-[0.5pt] border-primary/20 pb-1">
+<span class="material-symbols-outlined text-[18px]">contact_page</span> Contact
+                </h2>
+<div class="flex flex-col gap-3 mt-4">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-[2px]">call</span>
+<div>
+<div class="font-label-metadata text-label-metadata text-secondary">Phone</div>
+<div class="font-body-main text-body-main text-on-surface">+91-7209372901</div>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-[2px]">mail</span>
+<div>
+<div class="font-label-metadata text-label-metadata text-secondary">Email</div>
+<div class="font-body-main text-body-main text-on-surface">shubham63oy@gmail.com</div>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-[2px]">location_on</span>
+<div>
+<div class="font-label-metadata text-label-metadata text-secondary">Address</div>
+<div class="font-body-main text-body-main text-on-surface leading-tight">Buddha Colony, 800001,<br/>Patna, Bihar</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Skills Section -->
+<div class="mb-section-stack">
+<h2 class="font-h2-section text-h2-section text-primary uppercase mb-element-stack flex items-center gap-2 border-b-[0.5pt] border-primary/20 pb-1">
+<span class="material-symbols-outlined text-[18px]">psychology</span> Skills
+                </h2>
+<div class="flex flex-wrap gap-2 mt-4">
+<div class="bg-surface-container-lowest border border-primary/10 rounded px-2 py-1 font-caption text-caption text-on-surface">Use of AI tools</div>
+<div class="bg-surface-container-lowest border border-primary/10 rounded px-2 py-1 font-caption text-caption text-on-surface">Python (basic)</div>
+<div class="bg-surface-container-lowest border border-primary/10 rounded px-2 py-1 font-caption text-caption text-on-surface">MS Word</div>
+<div class="bg-surface-container-lowest border border-primary/10 rounded px-2 py-1 font-caption text-caption text-on-surface">MS Excel</div>
+<div class="bg-surface-container-lowest border border-primary/10 rounded px-2 py-1 font-caption text-caption text-on-surface">Google Forms</div>
+</div>
+</div>
+<!-- Languages Section -->
+<div class="mb-section-stack">
+<h2 class="font-h2-section text-h2-section text-primary uppercase mb-element-stack flex items-center gap-2 border-b-[0.5pt] border-primary/20 pb-1">
+<span class="material-symbols-outlined text-[18px]">language</span> Languages
+                </h2>
+<div class="flex flex-col gap-3 mt-4">
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-main text-body-main text-on-surface">English</span>
+</div>
+<div class="h-[4px] w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[85%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-body-main text-body-main text-on-surface">Hindi</span>
+</div>
+<div class="h-[4px] w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[95%]"></div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content (65%) -->
+<main class="w-[65%] bg-surface-container-lowest h-full pt-page-margin-y pb-page-margin-y pl-column-gap pr-page-margin-x flex flex-col">
+<!-- Header / Name -->
+<div class="mb-section-stack pb-element-stack border-b-[0.5pt] border-outline-variant">
+<h1 class="font-h1-name text-h1-name text-on-surface">Shubham Kumar</h1>
+<p class="font-h3-title text-h3-title text-primary mt-1">Back Office Computer Operator</p>
+</div>
+<!-- Objective Section -->
+<div class="mb-section-stack">
+<h2 class="font-h2-section text-h2-section text-primary uppercase mb-element-stack flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">person</span> Objective
+                </h2>
+<p class="font-body-main text-body-main text-on-surface-variant leading-relaxed">
+                    Seeking a Back Office Computer Operator position where I can utilize my computer skills, knowledge of MS Office, and understanding of digital tools to efficiently manage data and support office operations.
+                </p>
+</div>
+<!-- Education Section -->
+<div class="mb-section-stack">
+<h2 class="font-h2-section text-h2-section text-primary uppercase mb-element-stack flex items-center gap-2 border-b-[0.5pt] border-outline-variant/50 pb-2">
+<span class="material-symbols-outlined text-[18px]">school</span> Education
+                </h2>
+<div class="flex flex-col gap-4 mt-4">
+<!-- Edu Item 1 -->
+<div class="relative pl-4 border-l-[1.5pt] border-surface-variant">
+<div class="absolute w-2 h-2 rounded-full bg-secondary -left-[5px] top-1.5"></div>
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-h3-title text-h3-title text-on-surface">Class 12 (CBSE)</h3>
+<span class="font-label-metadata text-label-metadata text-secondary">2025</span>
+</div>
+<p class="font-body-main text-body-main text-on-surface-variant">Cambridge School, Silao</p>
+</div>
+<!-- Edu Item 2 -->
+<div class="relative pl-4 border-l-[1.5pt] border-surface-variant">
+<div class="absolute w-2 h-2 rounded-full bg-secondary -left-[5px] top-1.5"></div>
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-h3-title text-h3-title text-on-surface">Class 10 (CBSE)</h3>
+<span class="font-label-metadata text-label-metadata text-secondary">2022</span>
+</div>
+<p class="font-body-main text-body-main text-on-surface-variant">All Saint's School, Rajgir</p>
+</div>
+</div>
+</div>
+<!-- Projects Section -->
+<div class="mb-section-stack">
+<h2 class="font-h2-section text-h2-section text-primary uppercase mb-element-stack flex items-center gap-2 border-b-[0.5pt] border-outline-variant/50 pb-2">
+<span class="material-symbols-outlined text-[18px]">code</span> Projects
+                </h2>
+<div class="mt-4">
+<div class="bg-surface p-4 rounded-lg border-[0.5pt] border-outline-variant/30 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">web</span>
+<h3 class="font-h3-title text-h3-title text-on-surface">eRide Web App</h3>
+</div>
+<a class="font-body-main text-body-main text-primary hover:underline flex items-center gap-1 break-all" href="https://ride-mvp-zeta.vercel.app/">
+<span class="material-symbols-outlined text-[14px]">link</span>
+                            https://ride-mvp-zeta.vercel.app/
+                        </a>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

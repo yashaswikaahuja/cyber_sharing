@@ -7,6 +7,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -107,7 +108,6 @@
             justify-content: center;
             padding: 2rem 0;
             -webkit-print-color-adjust: exact !important;
-            color-adjust: exact !important;
             print-color-adjust: exact !important;
         }
         .a4-paper {
@@ -117,13 +117,11 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             -webkit-print-color-adjust: exact !important;
-            color-adjust: exact !important;
             print-color-adjust: exact !important;
         }
         @media print {
             * {
                 -webkit-print-color-adjust: exact !important;
-                color-adjust: exact !important;
                 print-color-adjust: exact !important;
             }
             body {
@@ -137,30 +135,18 @@
                 margin: 0 !important;
                 position: static !important;
             }
-            .no-print, .print-btn, .print-button, .print-helper {
+            .no-print, .print-btn, .print-button {
                 display: none !important;
             }
             aside {
                 background-color: #455A64 !important;
             }
-            .bg-surface {
-                background-color: #f3faff !important;
-            }
-            .bg-surface-container-lowest {
-                background-color: #ffffff !important;
-            }
         }</style>
 </head>
-<body class="text-on-surface antialiased">
-<div class="no-print fixed top-6 right-6 z-50 flex flex-col items-end gap-2 print-button">
-<button class="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full shadow-lg hover:bg-primary/90 transition-colors cursor-pointer" onclick="window.print()">
-<span class="material-symbols-outlined text-[20px]">print</span>
-<span class="font-medium text-sm">Print / Save PDF</span>
+<body class="text-on-surface antialiased"><button class="no-print fixed top-6 right-6 z-50 flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full shadow-lg hover:bg-primary/90 transition-colors cursor-pointer print-btn print-button" onclick="window.print()">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span class="font-medium text-sm">Download PDF</span>
 </button>
-<p class="text-xs text-on-surface-variant bg-white/90 p-2 rounded shadow-sm border border-outline-variant/30 max-w-[260px] text-right print-helper">
-        Note: If background colors don't appear in the preview, please enable "Background graphics" in your browser's print settings.
-    </p>
-</div>
 <!-- Top Navigation (No Print) -->
 <!-- The A4 Resume -->
 <div class="a4-paper flex print:mt-0 relative">
@@ -286,7 +272,7 @@
 <span class="material-symbols-outlined text-primary">web</span>
 <h3 class="font-h3-title text-h3-title text-on-surface">eRide Web App</h3>
 </div>
-<span class="font-body-main text-body-main text-on-surface-variant flex items-center gap-1 break-all"><a class="text-primary font-medium hover:text-primary/80 underline break-all" href="https://ride-mvp-zeta.vercel.app/">https://ride-mvp-zeta.vercel.app/</a></span>
+<span class="font-body-main text-body-main text-on-surface-variant flex items-center gap-1 break-all"><a class="text-black underline break-all" href="https://ride-mvp-zeta.vercel.app/">https://ride-mvp-zeta.vercel.app/</a></span>
 </div>
 </div>
 </div>
